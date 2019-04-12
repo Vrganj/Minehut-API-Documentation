@@ -18,8 +18,8 @@
             <code>https://api.minehut.com/server/{server-id}</code>
         </div>
         <div class="other">
-            <h2>RESPONSE</h2>
-            <pre class="code">
+            <h2>RESPONSE</h2> <button onclick="showResponse('wan')">Show</button>
+            <pre class="code" style="display: none;" id="wan">
 {
     "server": {
         "credits_per_day": 0,
@@ -103,8 +103,8 @@
             <code>https://api.minehut.com/servers</code>
         </div>
         <div class="other">
-            <h2>RESPONSE</h2>
-            <pre class="code">
+            <h2>RESPONSE</h2> <button onclick="showResponse('too')">Show</button>
+            <pre class="code" style="display: none;" id="too">
 {
     "servers": [
     {
@@ -162,5 +162,6 @@
             <pre>Doesn't require authorization.</pre>
         </div>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>

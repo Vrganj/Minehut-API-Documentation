@@ -75,3 +75,18 @@ code {
   padding: 5px;
   border-radius: 5px;
 }
+
+button {
+  border: 0;
+  background: #eee;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+button:active {
+  background: #ddd;
+}
+
+* {
+  outline: 0;
+}
