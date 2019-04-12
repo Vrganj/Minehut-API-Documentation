@@ -1,4 +1,77 @@
+body {
+  font-family: sans-serif;
+}
+
 .card {
+  margin: 15px;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.card header {
   background: #578cf7;
+  padding: 5px 5px 5px 20px;
+  border-radius: 4px 4px 0 0;
+  color: white;
+}
+
+.card h2 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.card h2 > .type {
+  top: 0;
+  width: 64px;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 0 15px 0 0;
+  padding: 9px;
+  border-radius: 5px;
+}
+
+code {
+  font-weight: 400;
+}
+
+.placeholder {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 2.5px;
+  border-radius: 5px;
+}
+
+.card-info code {
+  display: block;
+  width: 580px;
+  padding: 3px 0 1px 0;
+  padding-top: 3px;
+  padding-right: 0px;
+  padding-bottom: 1px;
+  padding-left: 0px;
+  white-space: pre-wrap;
+  white-space: pre;
+  word-wrap: break-word;
+}
+
+.card-info, .card-description {
+  padding: 10px 20px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.card > .other {
+  padding: 10px 20px;
+  color: black;
+  border-top: 1px solid #ddd;
+}
+
+.code {
+  background: rgba(0, 0, 0, 0.03);
+  padding: 5px;
   border-radius: 5px;
 }
