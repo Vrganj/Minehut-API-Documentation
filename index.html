@@ -226,7 +226,73 @@
             <pre>Doesn't require authorization.</pre>
         </div>
     </div>
-
+    <div class="card">
+        <header>
+            <h2>
+                <div class="type">POST</div>
+                <code>/users/signup</code>
+            </h2>
+        </header>
+        <div class="card-info">
+            <code>https://api.minehut.com/users/signup</code>
+        </div>
+        <div class="other">
+            <h2>REQUEST BODY</h2>
+            <pre class="code">{"email":"spongebob@squarep.ants","birthday":"1986-01-02T00:05:40.082Z"}</pre>
+        </div>
+        <div class="other">
+            <pre>Sign up using an email and a date of birth.</pre>
+        </div>
+        <div class="other">
+            <pre>Doesn't require authorization.</pre>
+        </div>
+    </div>
+    <div class="card">
+        <header>
+            <h2>
+                <div class="type">POST</div>
+                <code>/users/confirm_email</code>
+            </h2>
+        </header>
+        <div class="card-info">
+            <code>https://api.minehut.com/users/confirm_email</code>
+        </div>
+        <div class="other">
+            <h2>REQUEST BODY</h2>
+            <pre class="code">{"email_code":"P1N34PPL3","password":"smokePotatoeveryDay"}</pre>
+        </div>
+        <div class="other">
+            <pre>Confirm an account registration using the email received.</pre>
+        </div>
+        <div class="other">
+            <pre>Doesn't require authorization.</pre>
+        </div>
+    </div>
+    <div class="card">
+        <header>
+            <h2>
+                <div class="type">POST</div>
+                <code>/servers/create</code>
+            </h2>
+        </header>
+        <div class="card-info">
+            <code>https://api.minehut.com/servers/create</code>
+        </div>
+        <div class="other">
+            <h2>REQUEST BODY</h2>
+            <pre class="code">{"name":"beepbeep","platform":"java"}</pre>
+        </div>
+        <div class="other">
+            <h2>REQUEST HEADERS</h2>
+            <pre class="code">Authorization: y0ur-t0k3n-h3r3-0bv,<br>Content-Type: application/json</pre>
+        </div>
+        <div class="other">
+            <pre>Create a server using your token.</pre>
+        </div>
+        <div class="other">
+            <pre>Doesn't require authorization.</pre>
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
