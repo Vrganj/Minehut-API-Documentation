@@ -232,7 +232,7 @@
         "name": "file/world/upload/<span class=\"placeholder\">Server ID</span>",
         "auth": true,
         "endpoint": "https://api.minehut.com/file/world/upload/{server-id}",
-        "body":"Needs to be a form upload file thing ???",
+        "body": "File (binary)",
         "description": [
             "Uploads a .zip world."
         ]
