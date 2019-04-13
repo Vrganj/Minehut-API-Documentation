@@ -65,6 +65,18 @@
         ]
     },
     {
+        "method": "get",
+        "name": "/user/<span class=\"placeholder\">User ID</span>",
+        "auth": true,
+        "endpoint": "https://api.minehut.com/user/{user-id}",
+        "description": [
+            "Returns user info."
+        ],
+        "response": {
+            "file": "user_info.txt"
+        }
+    },
+    {
         "method": "post",
         "name": "/servers/create",
         "auth": true,
@@ -90,6 +102,60 @@
         "endpoint": "https://api.minehut.com/server/{server-id}/status",
         "description": [
             "Returns the status of the server (starting, stopping, players online, plugins etc.)."
+        ]
+    },
+    {
+        "method": "post",
+        "name": "/server/<span class=\"placeholder\">Server ID</span>/start_service",
+        "auth": true,
+        "endpoint": "https://api.minehut.com/server/{server-id}/start_service",
+        "description": [
+            "Brings the server out of hibernation and starts it."
+        ]
+    },
+    {
+        "method": "post",
+        "name": "/server/<span class=\"placeholder\">Server ID</span>/start",
+        "auth": true,
+        "endpoint": "https://api.minehut.com/server/{server-id}/start",
+        "description": [
+            "Starts the server if it's not in hibernation."
+        ]
+    },
+    {
+        "method": "post",
+        "name": "/server/<span class=\"placeholder\">Server ID</span>/shutdown",
+        "auth": true,
+        "endpoint": "https://api.minehut.com/server/{server-id}/shutdown",
+        "description": [
+            "Stops the server, but does not put it in hibernation."
+        ]
+    },
+    {
+        "method": "post",
+        "name": "/server/<span class=\"placeholder\">Server ID</span>/destroy_service",
+        "auth": true,
+        "endpoint": "https://api.minehut.com/server/{server-id}/destroy_service",
+        "description": [
+            "Immediately stops the server and puts it in hibernation."
+        ]
+    },
+    {
+        "method": "post",
+        "name": "/server/<span class=\"placeholder\">Server ID</span>/repair_files",
+        "auth": true,
+        "endpoint": "https://api.minehut.com/server/{server-id}/repair_files",
+        "description": [
+            "Attempts to repair the server files incase of an issue."
+        ]
+    },
+    {
+        "method": "post",
+        "name": "/server/<span class=\"placeholder\">Server ID</span>/reset_all",
+        "auth": true,
+        "endpoint": "https://api.minehut.com/server/{server-id}/reset_all",
+        "description": [
+            "Completely resets the server (Erases all files on it)."
         ]
     }
 ]
