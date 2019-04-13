@@ -67,6 +67,7 @@
         "name": "/servers/create",
         "auth": true,
         "endpoint": "https://api.minehut.com/servers/create",
+        "body": "{\"name\":\"MyServer\",\"platform\":\"java\"}",
         "description": [
             "Creates a new server on the specified account (maximum of 2)."
         ]
