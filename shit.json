@@ -2,11 +2,9 @@
     {
         "method": "get",
         "name": "/servers",
+        "auth": false,
         "endpoint": "https://api.minehut.com/servers",
-        "description": [
-            "Stuff",
-            "I guess..."
-        ],
+        "description": "Hello",
         "response": {
             "file": "servers.txt"
         }
