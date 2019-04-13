@@ -3,8 +3,7 @@ window.onload = (e) => {
 
     for (let i = 0; i < elements.length; i++) {
         const el = elements[i].getElementsByClassName('response')[0];
-        if (el == null) continue;
-        el.getElementsByTagName('button')[0]-addEventListener('click', (e) => {
+        if (el != null) el.getElementsByTagName('button')[0].addEventListener('click', (e) => {
             el.getElementsByClassName('code')[0].style.display = el.getElementsByClassName('code')[0].style.display === 'none' ? '' : 'none';
         })
     }
