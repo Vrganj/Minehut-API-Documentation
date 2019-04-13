@@ -224,7 +224,7 @@
         "body":"{\"field\":\"See below for possible values\", \"value\":\"A value pertaining to the field\"}",
         "description": [
             "Changes values in the server.properties file.",
-            "Possible fields are: <span class=\"code\">max_players</span>, <span class=\"code\">level_type</span>, <span class=\"code\">level_name</span>, and <span class=\"code\">generator_settings</span>."
+            "Possible fields are <span class=\"code\">max_players</span>, <span class=\"code\">level_type</span>, <span class=\"code\">level_name</span>, and <span class=\"code\">generator_settings</span>."
         ]
     },
     {
