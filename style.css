@@ -31,7 +31,7 @@ li a {
 }
 
 pre {
-  overflow-wrap:break-word
+  white-space: pre-wrap;
 }
 
 .card {
@@ -103,9 +103,16 @@ code {
   border-top: 1px solid #ddd;
 }
 
-.code {
+pre .code {
   background: rgba(0, 0, 0, 0.03);
   padding: 5px;
+  border-radius: 5px;
+  overflow-wrap: break-word;
+}
+
+span.code {
+  background: rgba(0, 0, 0, 0.03);
+  padding: 1px;
   border-radius: 5px;
   overflow-wrap: break-word;
 }
