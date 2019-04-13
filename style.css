@@ -86,7 +86,6 @@ code {
   padding-bottom: 1px;
   padding-left: 0px;
   white-space: pre-wrap;
-  white-space: pre;
 }
 
 .card-info, .card-description {
@@ -96,6 +95,7 @@ code {
   padding-bottom: 10px;
   padding-left: 20px;
   border-bottom: 1px solid #ddd;
+  white-space: pre-wrap;
 }
 
 .card > .other {
@@ -103,6 +103,7 @@ code {
   color: black;
   border-top: 1px solid #ddd;
   line-height: 20px;
+  white-space: pre-wrap;
 }
 
 pre.code {
