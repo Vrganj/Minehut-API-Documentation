@@ -6,7 +6,7 @@ window.onload = async (e) => {
     data.forEach(async (c) => {
         const auth = c.auth ? "Requires authorization." : "Doesn't require authorization.";
 
-        let res;
+        let res, body;
 
         if (c.response) res = `
             <div class="other response">
@@ -14,8 +14,6 @@ window.onload = async (e) => {
                 <pre class="code" style="display: none;" data-response="${c.response.file}"></pre>
             </div>
         `;
-        
-        let body;
 
         if (c.body) body = `
             <div class="other response">
