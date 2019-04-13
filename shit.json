@@ -43,5 +43,50 @@
         "response": {
             "file": "plugins_public.txt"
         }
+    },
+    {
+        "method": "post",
+        "name": "/users/signup",
+        "auth": false,
+        "endpoint": "https://api.minehut.com/users/signup",
+        "description": [
+            "Signup using an email and date of birth. Also sends a verification code to said email."
+        ]
+    },
+    {
+        "method": "post",
+        "name": "/users/confirm_email",
+        "auth": false,
+        "endpoint": "https://api.minehut.com/users/confirm_email",
+        "description": [
+            "Verifies email code."
+        ]
+    },
+    {
+        "method": "post",
+        "name": "/servers/create",
+        "auth": true,
+        "endpoint": "https://api.minehut.com/servers/create",
+        "description": [
+            "Creates a new server on the specified account (maximum of 2)."
+        ]
+    },
+    {
+        "method": "get",
+        "name": "/servers/<span class=\"placeholder\">Server ID</span>/server_data",
+        "auth": true,
+        "endpoint": "https://api.minehut.com/servers/{server-id}/server_data",
+        "description": [
+            "Returns similar information to /server/{server-id}."
+        ]
+    },
+    {
+        "method": "get",
+        "name": "/server/<span class=\"placeholder\">Server ID</span>/status",
+        "auth": true,
+        "endpoint": "https://api.minehut.com/server/{server-id}/status",
+        "description": [
+            "Returns the status of the server (starting, stopping, players online, plugins etc.)."
+        ]
     }
 ]
