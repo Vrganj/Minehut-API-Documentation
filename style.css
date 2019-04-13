@@ -8,13 +8,14 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  max-width: 15%;
+  max-width: 20%;
   top: 0;
   background-color: #303030;
   height: 100%;
   color: #c2c2c2;
   position: fixed;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 li:hover {
