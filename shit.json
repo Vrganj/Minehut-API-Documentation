@@ -13,7 +13,7 @@
     },
     {
         "method": "get",
-        "name": "/server/<span class=\"highlight\">Server ID</span>",
+        "name": "/server/<span class=\"placeholder\">Server ID</span>",
         "auth": false,
         "endpoint": "https://api.minehut.com/server/{server-id}",
         "description": [
