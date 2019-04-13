@@ -38,7 +38,7 @@
         "auth": false,
         "endpoint": "https://api.minehut.com/plugins_public",
         "description": [
-            "Returns all the available plugins for Minehut servers, along with their id, name and description."
+            "Returns all the available plugins for Minehut servers, along with their id, name, and description."
         ],
         "response": {
             "file": "plugins_public.txt"
