@@ -22,5 +22,14 @@
         "response": {
             "file": "server.txt"
         }
+    },
+    {
+        "method": "get",
+        "name": "/server/<span class=\"placeholder\">Server Name</span>?byName=true",
+        "auth": false,
+        "endpoint": "https://api.minehut.com/server/{server-name}?byName=true",
+        "description": [
+            "Same as the previous, but uses the name instead of the ID."
+        ]
     }
 ]
