@@ -224,7 +224,7 @@
         "body":"{\"field\":\"See below for possible values\", \"value\":\"A value pertaining to the field\"}",
         "description": [
             "Changes values in the server.properties file.",
-            "Possible fields are <span class=\"code\">max_players</span>, <span class=\"code\">level_type</span>, <span class=\"code\">level_name</span>, and <span class=\"code\">generator_settings</span>."
+            "Possible fields are <span class=\"code\">max_players</span>, <span class=\"code\">level_type</span>, <span class=\"code\">level_name</span>, <span class=\"code\">generator_settings</span>, <span class=\"code\">gamemode</span>, <span class=\"code\">force_gamemode</span>, <span class=\"code\">pvp</span>, <span class=\"code\">spawn_mobs</span>, <span class=\"code\">spawn_animals</span>, <span class=\"code\">allow_flight</span>, <span class=\"code\">generator_settings</span>, <span class=\"code\">difficulty</span>, <span class=\"code\">hardcore</span>, <span class=\"code\">enable_command_block</span>, <span class=\"code\">announce_player_achievements</span>, <span class=\"code\">allow_nether</span>, <span class=\"code\">generate_structures</span>, and <span class=\"code\">resource_pack</span>."
         ]
     },
     {
