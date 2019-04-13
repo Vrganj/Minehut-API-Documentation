@@ -2,19 +2,17 @@ window.onload = async (e) => {
     const data = await fetch(`https://raw.githubusercontent.com/Vrganj/Minehut-API-Documentation/master/shit.json`).then(res => res.json());
     data.forEach(async card => {
         console.log(card);
-        const auth = card.auth ? 'Requires authorization.' : 'Doesn\'t require authorization.'; 
+        const auth = card.auth ? 'Requires authorization.' : 'Doesn\'t require authorization.';
 
         let res;
 
-        if (card.response) {
-            res = await fetch(`https://raw.githubusercontent.com/Vrganj/Minehut-API-Documentation/master/responses/${card.response.file}`).then(res => res.text());
-            res = `
+        if (card.response) res = `
             <div class="other response">
                 <h2>RESPONSE</h2> <button>Show</button>
-                <pre class="code" style="display: none;" data-response="server"></pre>
+                <pre class="code" style="display: none;" data-response="${card.response.file}"></pre>
             </div>
-            `;
-        }
+        `;
+        
 
         const cardDiv = document.createElement('div');
 
@@ -51,7 +49,7 @@ window.onload = async (e) => {
         if (el != null) el.getElementsByTagName('button')[0].addEventListener('click', async (e) => {
             el.getElementsByClassName('code')[0]
             const rn = el.getElementsByClassName('code')[0].getAttribute('data-response');
-            const res = await fetch(`https://raw.githubusercontent.com/Vrganj/Minehut-API-Documentation/master/responses/${rn}.txt`).then(res => res.text());
+            const res = await fetch(`https://raw.githubusercontent.com/Vrganj/Minehut-API-Documentation/master/responses/${rn}`).then(res => res.text());
             el.getElementsByClassName('code')[0].innerText = res;
             el.getElementsByClassName('code')[0].style.display = el.getElementsByClassName('code')[0].style.display === 'none' ? '' : 'none';
         });

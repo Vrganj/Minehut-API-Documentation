@@ -5,8 +5,7 @@
         "auth": false,
         "endpoint": "https://api.minehut.com/servers",
         "description": [
-            "Hello",
-            "I'm boobo"
+            "Returns a list of currently online player servers."
         ],
         "response": {
             "file": "servers.txt"
