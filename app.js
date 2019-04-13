@@ -17,6 +17,7 @@ window.onload = async (e) => {
 
         if (c.body) body = `
             <div class="other">
+                <h2>BODY</h2>
                 <pre class="code" style="display: block;" data-response="${c.body}"></pre>
             </div>
         `;

@@ -49,6 +49,7 @@
         "name": "/users/signup",
         "auth": false,
         "endpoint": "https://api.minehut.com/users/signup",
+        "body": "{\"email\":\"spongebob@squarep.ants\",\"birthday\":\"1986-01-02T00:05:40.082Z\"}",
         "description": [
             "Signup using an email and date of birth. Also sends a verification code to said email."
         ]
@@ -58,6 +59,7 @@
         "name": "/users/confirm_email",
         "auth": false,
         "endpoint": "https://api.minehut.com/users/confirm_email",
+        "body": "{\"email_code\":\"P1N34PPL3\",\"password\":\"P@ssw0rd1234\"}",
         "description": [
             "Verifies email code."
         ]
