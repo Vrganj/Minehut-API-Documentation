@@ -17,7 +17,7 @@
         "auth": false,
         "endpoint": "https://api.minehut.com/server/{server-id}",
         "description": [
-            "Returns basic information of a server using its id."
+            "Returns basic information of a server using its ID."
         ],
         "response": {
             "file": "server.txt"

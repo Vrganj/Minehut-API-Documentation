@@ -10,7 +10,7 @@ window.onload = async (e) => {
 
         if (card.response) res = `
             <div class="other response">
-                <h2>RESPONSE</h2> <button>Show</button>
+                <h2>RESPONSE</h2> <button style="font-size: 15px">Show</button>
                 <pre class="code" style="display: none;" data-response="${card.response.file}"></pre>
             </div>
         `;
