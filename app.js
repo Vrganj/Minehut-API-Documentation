@@ -57,7 +57,7 @@ window.onload = async (e) => {
 
         const response = card.getElementsByClassName('response')[0];
         const button = response.getElementsByTagName('button')[0];
-        const code = el.getElementsByClassName("code")[0];
+        const code = response.getElementsByClassName("code")[0];
         const file = code.getAttribute("data-response");
         code.innerText = await fetch(`${BASE_RAW}/responses/${file}`).then(res => res.text());
 
