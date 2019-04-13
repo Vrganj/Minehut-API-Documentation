@@ -31,5 +31,14 @@
         "description": [
             "Same as the previous, but uses the name instead of the ID."
         ]
+    },
+    {
+        "method": "get",
+        "name": "/plugins_public",
+        "auth": false,
+        "endpoint": "https://api.minehut.com/plugins_public",
+        "description": [
+            "Returns all the available plugins for Minehut servers."
+        ]
     }
 ]
