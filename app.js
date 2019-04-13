@@ -1,8 +1,10 @@
+const BASE_RAW = "https://raw.githubusercontent.com/Vrganj/Minehut-API-Documentation/master";
+
 window.onload = async (e) => {
-    const data = await fetch(`https://raw.githubusercontent.com/Vrganj/Minehut-API-Documentation/master/shit.json`).then(res => res.json());
+    const data = await fetch(`${BASE_RAW}/shit.json`).then(res => res.json());
     data.forEach(async card => {
         console.log(card);
-        const auth = card.auth ? 'Requires authorization.' : 'Doesn\'t require authorization.';
+        const auth = card.auth ? "Requires authorization." : "Doesn't require authorization.";
 
         let res;
 
@@ -14,13 +16,13 @@ window.onload = async (e) => {
         `;
         
 
-        const cardDiv = document.createElement('div');
+        const cardDiv = document.createElement("div");
 
         const desc = card.description.map(d => `
         <div class="other">
             <pre>${d}</pre>
         </div>
-        `).join('');
+        `).join("");
 
         cardDiv.innerHTML = `
 
@@ -34,7 +36,7 @@ window.onload = async (e) => {
             <div class="card-info">
                 <code>${card.endpoint}</code>
             </div>
-            ${res || ''}
+            ${res || ""}
             ${desc}
             <div class="other">
                 <pre>${auth}</pre>
@@ -43,15 +45,16 @@ window.onload = async (e) => {
 
         `;
 
-        document.getElementById('content').append(cardDiv);
+        document.getElementById("content").append(cardDiv);
 
-        const el = cardDiv.getElementsByClassName('response')[0];
-        if (el != null) el.getElementsByTagName('button')[0].addEventListener('click', async (e) => {
-            el.getElementsByClassName('code')[0]
-            const rn = el.getElementsByClassName('code')[0].getAttribute('data-response');
-            const res = await fetch(`https://raw.githubusercontent.com/Vrganj/Minehut-API-Documentation/master/responses/${rn}`).then(res => res.text());
-            el.getElementsByClassName('code')[0].innerText = res;
-            el.getElementsByClassName('code')[0].style.display = el.getElementsByClassName('code')[0].style.display === 'none' ? '' : 'none';
+        const el = cardDiv.getElementsByClassName("response")[0];
+        const button = el.getElementsByTagName("button")[0];
+        if (el != null) button.addEventListener("click", async (e) => {
+            const code = el.getElementsByClassName("code")[0];
+            const rn = code.getAttribute("data-response");
+            const res = await fetch(`${BASE_RAW}/responses/${rn}`).then(res => res.text());
+            code.innerText = res;
+            code.style.display = code.style.display === "none" ? "" : "none";
         });
     });
 }
