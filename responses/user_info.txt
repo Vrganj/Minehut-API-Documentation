@@ -1,0 +1,17 @@
+{
+	"user": {
+		"credits": 0,
+		"_id": "5cb11bff5c3ebc1955c33852",
+		"email": "spongebob@squarep.ants",
+		"email_verified": true,
+		"email_sent_at": 1555110621197,
+		"created_at": 1555110621060,
+		"birthday": "1992-01-02T00:10:25.612Z",
+		"__v": 0,
+		"email_code": "e3il0",
+		"last_password_change": 1555110670755,
+		"token": "12c90781-738e-4c62-a53b-bc88b25f759b",
+		"last_login": 1555169889763,
+		"servers": ["5cb11d898c3ebc1969c33858"]
+	}
+}
