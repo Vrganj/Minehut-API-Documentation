@@ -157,5 +157,45 @@
         "description": [
             "Completely resets the server (Erases all files on it)."
         ]
+    },
+    {
+        "method": "post",
+        "name": "/server/<span class=\"placeholder\">Server ID</span>/send_command",
+        "auth": true,
+        "endpoint": "https://api.minehut.com/server/{server-id}/send_command",
+        "body":"{\"command\":\"/say Hello World!\"}"
+        "description": [
+            "Runs a console command to the server."
+        ]
+    },
+    {
+        "method": "post",
+        "name": "/server/<span class=\"placeholder\">Server ID</span>/change_name",
+        "auth": true,
+        "endpoint": "https://api.minehut.com/server/{server-id}/change_name",
+        "body":"{\"name\":\"MyServer2.0\"}"
+        "description": [
+            "Changes the servers name. Error 400 if name is already taken."
+        ]
+    },
+    {
+        "method": "post",
+        "name": "/server/<span class=\"placeholder\">Server ID</span>/change_motd",
+        "auth": true,
+        "endpoint": "https://api.minehut.com/server/{server-id}/change_motd",
+        "body":"{\"command\":\"&6Ooo, &athis is nice!\"}"
+        "description": [
+            "Changes the servers MOTD (message of the day)."
+        ]
+    },
+    {
+        "method": "post",
+        "name": "/server/<span class=\"placeholder\">Server ID</span>/visibility",
+        "auth": true,
+        "endpoint": "https://api.minehut.com/server/{server-id}/visibility",
+        "body":"{\"visibility\":\"true/false\"}"
+        "description": [
+            "Changes whether your server appears in the server list."
+        ]
     }
 ]
