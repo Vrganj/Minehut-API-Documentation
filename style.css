@@ -84,12 +84,14 @@ code {
   padding: 10px 20px;
   color: black;
   border-top: 1px solid #ddd;
+  word-break: break-word;
 }
 
 .code {
   background: rgba(0, 0, 0, 0.03);
   padding: 5px;
   border-radius: 5px;
+  word-break: break-word;
 }
 
 button {

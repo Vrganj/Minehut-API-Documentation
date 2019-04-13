@@ -1,0 +1,14 @@
+[
+    {
+        "method": "get",
+        "name": "/servers",
+        "endpoint": "https://api.minehut.com/servers",
+        "description": [
+            "Stuff",
+            "I guess..."
+        ],
+        "response": {
+            "file": "servers.txt"
+        }
+    }
+]
