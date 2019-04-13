@@ -56,12 +56,13 @@ window.onload = async (e) => {
         document.getElementById("content").append(card);
 
         const response = card.getElementsByClassName('response')[0];
-        if (response == null) continue;
-        const button = response.getElementsByTagName('button')[0];
-        const code = response.getElementsByClassName("code")[0];
-        const file = code.getAttribute("data-response");
-        code.innerText = await fetch(`${BASE_RAW}/responses/${file}`).then(res => res.text());
+        if (response != null) {
+            const button = response.getElementsByTagName('button')[0];
+            const code = response.getElementsByClassName("code")[0];
+            const file = code.getAttribute("data-response");
+            code.innerText = await fetch(`${BASE_RAW}/responses/${file}`).then(res => res.text());
 
-        if (response != null) button.addEventListener("click", e => code.style.display = code.style.display === "none" ? "" : "none" );
+            button.addEventListener("click", e => code.style.display = code.style.display === "none" ? "" : "none" );
+        }
     });
 }
