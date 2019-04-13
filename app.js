@@ -2,39 +2,39 @@ const BASE_RAW = "https://raw.githubusercontent.com/Vrganj/Minehut-API-Documenta
 
 window.onload = async (e) => {
     const data = await fetch(`${BASE_RAW}/shit.json`).then(res => res.json());
-    data.forEach(async card => {
-        console.log(card);
-        const auth = card.auth ? "Requires authorization." : "Doesn't require authorization.";
+
+    data.forEach(async (c) => {
+        const auth = c.auth ? "Requires authorization." : "Doesn't require authorization.";
 
         let res;
 
-        if (card.response) res = `
+        if (c.response) res = `
             <div class="other response">
                 <h2>RESPONSE</h2> <button style="font-size: 15px">Show</button>
-                <pre class="code" style="display: none;" data-response="${card.response.file}"></pre>
+                <pre class="code" style="display: none;" data-response="${c.response.file}"></pre>
             </div>
         `;
         
 
-        const cardDiv = document.createElement("div");
+        const card = document.createElement("div");
 
-        const desc = card.description.map(d => `
+        const desc = c.description.map(d => `
         <div class="other">
             <pre>${d}</pre>
         </div>
         `).join("");
 
-        cardDiv.innerHTML = `
+        card.innerHTML = `
 
         <div class="card">
             <header>
                 <h2>
-                    <div class="type">${card.method.toUpperCase()}</div>
-                    <code>${card.name}</code>
+                    <div class="type">${c.method.toUpperCase()}</div>
+                    <code>${c.name}</code>
                 </h2>
             </header>
             <div class="card-info">
-                <code>${card.endpoint}</code>
+                <code>${c.endpoint}</code>
             </div>
             ${res || ""}
             ${desc}
@@ -45,16 +45,14 @@ window.onload = async (e) => {
 
         `;
 
-        document.getElementById("content").append(cardDiv);
+        document.getElementById("content").append(card);
 
-        const el = cardDiv.getElementsByClassName("response")[0];
-        const button = el.getElementsByTagName("button")[0];
-        if (el != null) button.addEventListener("click", async (e) => {
-            const code = el.getElementsByClassName("code")[0];
-            const rn = code.getAttribute("data-response");
-            const res = await fetch(`${BASE_RAW}/responses/${rn}`).then(res => res.text());
-            code.innerText = res;
-            code.style.display = code.style.display === "none" ? "" : "none";
-        });
+        const response = card.getElementsByClassName('response')[0];
+        const button = response.getElementsByTagName('button')[0];
+        const code = el.getElementsByClassName("code")[0];
+        const file = code.getAttribute("data-response");
+        code.innerText = await fetch(`${BASE_RAW}/responses/${file}`).then(res => res.text());
+
+        if (response != null) button.addEventListener("click", e => code.style.display = code.style.display === "none" ? "" : "none" );
     });
 }
