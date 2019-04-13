@@ -15,6 +15,14 @@ window.onload = async (e) => {
             </div>
         `;
         
+        let body;
+
+        if (c.body) body = `
+            <div class="other response">
+                <pre class="code" style="display: block;" data-response="${c.body}"></pre>
+            </div>
+        `;
+        
 
         const card = document.createElement("div");
 
@@ -37,6 +45,7 @@ window.onload = async (e) => {
                 <code>${c.endpoint}</code>
             </div>
             ${res || ""}
+            ${body || ""}
             ${desc}
             <div class="other">
                 <pre>${auth}</pre>
