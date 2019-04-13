@@ -83,7 +83,6 @@ code {
   padding-left: 0px;
   white-space: pre-wrap;
   white-space: pre;
-  word-wrap: break-word;
 }
 
 .card-info, .card-description {
@@ -99,7 +98,10 @@ code {
   padding: 10px 20px;
   color: black;
   border-top: 1px solid #ddd;
-  word-break: break-word;
+}
+
+* {
+  word-wrap: break-word;
 }
 
 .code {
