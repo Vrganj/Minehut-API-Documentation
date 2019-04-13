@@ -197,5 +197,49 @@
         "description": [
             "Changes whether your server appears in the server list."
         ]
+    },
+    {
+        "method": "post",
+        "name": "/server/<span class=\"placeholder\">Server ID</span>/save",
+        "auth": true,
+        "endpoint": "https://api.minehut.com/server/{server-id}/save",
+        "description": [
+            "Saves the servers world."
+        ]
+    },
+    {
+        "method": "post",
+        "name": "/server/<span class=\"placeholder\">Server ID</span>/reset_world",
+        "auth": true,
+        "endpoint": "https://api.minehut.com/server/{server-id}/reset_world",
+        "description": [
+            "Resets the servers world with a new seed."
+        ]
+    },
+    {
+        "method": "post",
+        "name": "/server/<span class=\"placeholder\">Server ID</span>/edit_server_properties",
+        "auth": true,
+        "endpoint": "https://api.minehut.com/server/{server-id}/edit_server_properties",
+        "body":"{\"field\":\"See below for possible values\", \"value\":\"A value pertaining to the field\"}",
+        "description": [
+            "Changes values in the server.properties file.",
+            "Possible fields are:",
+            "<span class=\"code\">max_players</span>",
+            "<span class=\"code\">level_type</span>",
+            "<span class=\"code\">level_name</span>",
+            "<span class=\"code\">generator_settings</span>",
+            "<span class=\"code\">Adding more.......</span>"
+        ]
+    },
+    {
+        "method": "post",
+        "name": "file/world/upload/<span class=\"placeholder\">Server ID</span>",
+        "auth": true,
+        "endpoint": "https://api.minehut.com/file/world/upload/{server-id}",
+        "body":"Needs to be a form upload file thing ???",
+        "description": [
+            "Uploads a .zip world."
+        ]
     }
 ]
