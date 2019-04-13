@@ -24,8 +24,11 @@ window.onload = async (e) => {
         `;
 
         const card = document.createElement("div");
-        card.setAttribute('id', c.endpoint);
-        endpoints.append(JSON.parse(`{"${c.endpoint}":"${c.name}"}`));
+        card.setAttribute('id', c.endpoint.substr(23));
+        endpoints.push(c.endpoint.substr(23));
+        document.getElementById('navbar').innerHTML += `
+            <li><a href="#${c.endpoint.substr(23)}">${c.endpoint.substr(23)}</a></li>
+        `;
 
         const desc = c.description.map(d => `
         <div class="other">
