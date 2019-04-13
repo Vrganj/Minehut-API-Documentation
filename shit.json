@@ -4,7 +4,10 @@
         "name": "/servers",
         "auth": false,
         "endpoint": "https://api.minehut.com/servers",
-        "description": "Hello",
+        "description": [
+            "Hello",
+            "I'm boobo"
+        ],
         "response": {
             "file": "servers.txt"
         }
