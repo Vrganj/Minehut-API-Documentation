@@ -61,7 +61,6 @@ window.onload = async (e) => {
             const code = response.getElementsByClassName("code")[0];
             const file = code.getAttribute("data-response");
             code.innerText = await fetch(`${BASE_RAW}/responses/${file}`).then(res => res.text());
-
             button.addEventListener("click", e => code.style.display = code.style.display === "none" ? "" : "none" );
         }
     });
