@@ -61,7 +61,7 @@
         "method": "post",
         "name": "/users/ghost_login",
         "auth": true,
-        "endpoint": "https://api.minehut.com/users/login",
+        "endpoint": "https://api.minehut.com/users/ghost_login",
         "description": [
             "Returns the same data as <span class=\"code\">/users/login</span>, but instead of using a request body, it uses authorization."
         ]
