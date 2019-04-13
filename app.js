@@ -56,6 +56,7 @@ window.onload = async (e) => {
         document.getElementById("content").append(card);
 
         const response = card.getElementsByClassName('response')[0];
+        if (response == null) continue;
         const button = response.getElementsByTagName('button')[0];
         const code = response.getElementsByClassName("code")[0];
         const file = code.getAttribute("data-response");
