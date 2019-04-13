@@ -95,7 +95,6 @@ code {
   padding-bottom: 10px;
   padding-left: 20px;
   border-bottom: 1px solid #ddd;
-  white-space: pre-wrap;
 }
 
 .card > .other {
@@ -103,7 +102,6 @@ code {
   color: black;
   border-top: 1px solid #ddd;
   line-height: 20px;
-  white-space: pre-wrap;
 }
 
 pre.code {
