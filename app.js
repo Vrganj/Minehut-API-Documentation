@@ -1,4 +1,5 @@
 const BASE_RAW = "https://raw.githubusercontent.com/Vrganj/Minehut-API-Documentation/master";
+let endpoints = [];
 
 window.onload = async (e) => {
     const data = await fetch(`${BASE_RAW}/shit.json`).then(res => res.json());
@@ -23,6 +24,8 @@ window.onload = async (e) => {
         `;
 
         const card = document.createElement("div");
+        card.setAttribute('id', c.endpoint);
+        endpoints.append(JSON.parse(`{"${c.endpoint}":"${c.name}"}`));
 
         const desc = c.description.map(d => `
         <div class="other">

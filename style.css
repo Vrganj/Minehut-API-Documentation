@@ -9,6 +9,7 @@ ul {
   margin: 0;
   padding: 0;
   width: 15%;
+  top: 0;
   background-color: #303030;
   height: 100%;
   color: #c2c2c2;
@@ -16,8 +17,16 @@ ul {
   overflow: auto;
 }
 
+li a {
+  display: block;
+  color: #c2c2c2;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+
 .card {
-  margin-left: 10%;
+  margin-left: 25%;
   margin-right: 10%;
   margin-top: 15px;
   background: white;
