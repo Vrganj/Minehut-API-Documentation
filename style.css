@@ -30,6 +30,9 @@ li a {
   font-size: 14px;
 }
 
+pre {
+  overflow-wrap:break-word
+}
 
 .card {
   margin-left: 25%;
@@ -98,10 +101,6 @@ code {
   padding: 10px 20px;
   color: black;
   border-top: 1px solid #ddd;
-}
-
-* {
-  word-wrap: break-word;
 }
 
 .code {
