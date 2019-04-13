@@ -10,5 +10,17 @@
         "response": {
             "file": "servers.txt"
         }
+    },
+    {
+        "method": "get",
+        "name": "/server/<span class=\"highlight\">Server ID</span>",
+        "auth": false,
+        "endpoint": "https://api.minehut.com/server/{server-id}",
+        "description": [
+            "Returns basic information of a server using its id."
+        ],
+        "response": {
+            "file": "server.txt"
+        }
     }
 ]

@@ -1,0 +1,38 @@
+{
+    "server": {
+        "credits_per_day": 0,
+        "visibility": true,
+        "motd": "A Minehut Server.",
+        "_id": "5cb11d898c3ebc1955c33858",
+        "owner": "5cb11add8c3ebc1955c33852",
+        "name": "ohyeathats",
+        "name_lower": "ohyeathats",
+        "creation": 1555111305224,
+        "platform": "java",
+        "storage_node": "s2",
+        "__v": 0,
+        "server_properties": {
+            "resource_pack": "",
+            "generator_settings": "",
+            "level_name": "world",
+            "level_type": "DEFAULT",
+            "announce_player_achievements": true,
+            "enable_command_block": false,
+            "generate_structures": true,
+            "allow_nether": true,
+            "level_seed": "",
+            "difficulty": 1,
+            "pvp": true,
+            "hardcore": false,
+            "force_gamemode": false,
+            "spawn_mobs": true,
+            "spawn_animals": true,
+            "allow_flight": false,
+            "gamemode": 1,
+            "max_players": 10
+        },
+        "suspended": false,
+        "active_plugins": [],
+        "purchased_plugins": []
+    }
+}
