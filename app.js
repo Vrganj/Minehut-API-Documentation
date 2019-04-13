@@ -17,11 +17,12 @@ window.onload = async (e) => {
 
         if (c.body) body = `
             <div class="other">
-                <h2>BODY</h2>
-                <pre class="code" style="display: block;" data-response="${c.body}"></pre>
+                <h2>REQUEST BODY</h2>
+                <pre class="code" style="display: block;">${c.body}</pre>
             </div>
         `;
         
+        console.log(body);
 
         const card = document.createElement("div");
 
