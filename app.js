@@ -21,8 +21,6 @@ window.onload = async (e) => {
                 <pre class="code" style="display: block;">${c.body}</pre>
             </div>
         `;
-        
-        console.log(body);
 
         const card = document.createElement("div");
 
