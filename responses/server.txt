@@ -1,0 +1,49 @@
+{
+    "server": {
+        "credits_per_day": 0,
+        "_id": "5ca516996eb6c04369419302",
+        "owner": "5bccb1105f9a3201b7d18341",
+        "name": "Tabanata",
+        "name_lower": "tabanata",
+        "creation": 1554323097802,
+        "platform": "java",
+        "storage_node": "s1",
+        "__v": 0,
+        "port": -1,
+        "key": "ae53981221095a79863632f3753ea9ebaf955f31",
+        "last_online": 1555091000155,
+        "motd": "&7The Minehut panel ingame!",
+        "visibility": false,
+        "server_properties": {
+            "resource_pack": "",
+            "level_name": "world",
+            "level_seed": "",
+            "difficulty": 1,
+            "hardcore": false,
+            "allow_flight": false,
+            "generator_settings": "",
+            "spawn_mobs": false,
+            "spawn_animals": false,
+            "allow_nether": false,
+            "generate_structures": false,
+            "gamemode": 2,
+            "force_gamemode": true,
+            "max_players": 10,
+            "level_type": "FLAT",
+            "announce_player_achievements": false,
+            "enable_command_block": true,
+            "pvp": false
+        },
+        "suspended": false,
+        "active_plugins": [
+            "5a42c0de69957f3d220592e9",
+            "5cabaf1ca8b6db60f425e53a",
+            "5a42c29c69957f3d220592ef",
+            "5c3533ab299bc02b597d60fd",
+            "5a42c13269957f3d220592ea",
+            "5a42c30069957f3d220592f0",
+            "5a42c19769957f3d220592ec"
+        ],
+        "purchased_plugins": []
+    }
+}

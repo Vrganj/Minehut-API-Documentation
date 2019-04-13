@@ -1,0 +1,36 @@
+{
+    "all": [
+        {
+            "_id": "5a42ba4846246d33fa64c625",
+            "name": "Essentials",
+            "credits": 0,
+            "platform": "java",
+            "desc": "Essential commands",
+            "desc_extended": "",
+            "version": "2.15.0.1",
+            "disabled": false,
+            "file_name": "Essentials.jar",
+            "config_file_name": "",
+            "__v": 0,
+            "created": 1536882007186,
+            "last_updated": 1552068718798
+        }...
+    ],
+    "bedrock": [
+        {
+            "_id": "5a1644e734fe6fad3dcb1903",
+            "name": "FactionsPro",
+            "credits": 0,
+            "platform": "bedrock",
+            "description": "Create your Faction, Claim your Land, Fight your Enemies!",
+            "version": "1.3.11",
+            "file_name": "FactionsPro.phar",
+            "disabled": false,
+            "desc": "Create your faction, Claim your Land, Fight your Enemies!",
+            "desc_extended": "With this plugin players group up in Factions. You <strong>claim land</strong> as your own and <strong>build your base</strong>...",
+            "config_file_name": "",
+            "created": 1511327459335,
+            "last_updated": 1549113504433
+        }
+    ]
+}

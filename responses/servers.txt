@@ -1,0 +1,52 @@
+{
+    "servers": [
+        {
+            "_id": "5cb10c8daaa36b18a20641c6",
+            "playerCount": 1,
+            "online": true,
+            "ip": "",
+            "port": 0,
+            "managerPort": 37661,
+            "timeNoPlayers": 0,
+            "name": "GoDutch",
+            "motd": "A Minehut Server.",
+            "maxPlayers": 10,
+            "visibility": true,
+            "platform": "java",
+            "startedAt": 155510696 8198,
+            "players": [
+                "sasquatchboi"
+            ],
+            "starting": false,
+            "stopping": false,
+            "exited": false,
+            "lastOnlineAt": 1555107100422,
+            "status": "ONLINE",
+            "updated": 1555107100422
+        },
+        {
+            "_id": "5c6f3ca5b66d3c55a20364d3",
+            "playerCount": 1,
+            "online": true,
+            "ip": "",
+            "port": 0,
+            "managerPort": 39915,
+            "timeNoPlayers": 0,
+            "name": "REAGANZK3L",
+            "motd": "A Minehut Server.",
+            "maxPlayers": 10,
+            "visibility": true,
+            "platform": "java",
+            "startedAt": 1555105610159,
+            "players": [
+                "Abby_Cakes"
+            ],
+            "starting": false,
+            "stopping": false,
+            "exited": false,
+            "lastOnlineAt": 1555107100621,
+            "status": "ONLINE",
+            "updated": 1555107100621
+        }...
+    ]
+}
