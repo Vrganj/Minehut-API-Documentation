@@ -18,6 +18,12 @@ window.onload = async (e) => {
 
         const cardDiv = document.createElement('div');
 
+        const desc = card.description.map(d => `
+        <div class="other">
+            <pre>${d}</pre>
+        </div>
+        `).join('');
+
         cardDiv.innerHTML = `
 
         <div class="card">
@@ -31,9 +37,7 @@ window.onload = async (e) => {
                 <code>${card.endpoint}</code>
             </div>
             ${res || ''}
-            <div class="other">
-                <pre>${card.description}</pre>
-            </div>
+            ${desc}
             <div class="other">
                 <pre>${auth}</pre>
             </div>
