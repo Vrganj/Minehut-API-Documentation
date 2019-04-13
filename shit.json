@@ -46,6 +46,28 @@
     },
     {
         "method": "post",
+        "name": "/users/login",
+        "auth": false,
+        "endpoint": "https://api.minehut.com/users/login",
+        "body": "{\"email\":\"spongebob@squarep.ants\",\"password\":\"ILiveInAPineappleUnderTheSea404\"}",
+        "description": [
+            "Returns token, user id, and servers from login credentials."
+        ],
+        "response": {
+            "file": "login.txt"
+        }
+    },
+    {
+        "method": "post",
+        "name": "/users/ghost_login",
+        "auth": true,
+        "endpoint": "https://api.minehut.com/users/login",
+        "description": [
+            "Returns the same data as <span class=\"code\">/users/login</span>, but instead of using a request body, it uses authorization."
+        ]
+    },
+    {
+        "method": "post",
         "name": "/users/signup",
         "auth": false,
         "endpoint": "https://api.minehut.com/users/signup",
