@@ -336,5 +336,15 @@
         "response": {
             "file": "read.txt"
         }
+    },
+    {
+        "method": "post",
+        "name": "/file/<span class=\"placeholder\">Server ID</span>/edit/<span class=\"placeholder\">File path</span>",
+        "auth": true,
+        "endpoint": "https://api.minehut.com/file/{server-id}/edit/{file-path}",
+        "body": "{\"content\":\"This text will overwrite whatever is inside the file\"}"
+        "description": [
+            "Edits the file and saves it with the content provided."
+        ]
     }
 ]
