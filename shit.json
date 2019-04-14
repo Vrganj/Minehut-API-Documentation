@@ -251,12 +251,54 @@
     },
     {
         "method": "post",
-        "name": "file/world/upload/<span class=\"placeholder\">Server ID</span>",
+        "name": "/file/world/upload/<span class=\"placeholder\">Server ID</span>",
         "auth": true,
         "endpoint": "https://api.minehut.com/file/world/upload/{server-id}",
         "body": "File (binary)",
         "description": [
             "Uploads a .zip world."
         ]
-    }
+    },
+    {
+        "method": "post",
+        "name": "/server/<span class=\"placeholder\">Server ID</span>/plugins",
+        "auth": true,
+        "endpoint": "https://api.minehut.com/server/{server-id}/plugins",
+        "description": [
+            "Returns all the plugins and whether they are installed or not."
+        ],
+        "response": {
+            "file": "plugins.txt"
+        }
+    },
+    {
+        "method": "post",
+        "name": "/server/<span class=\"placeholder\">Server ID</span>/install_plugin",
+        "auth": true,
+        "endpoint": "https://api.minehut.com/server/{server-id}/install_plugin",
+        "body": "{\"plugin\":\"5a42ba4846246d33fa64c625\"}",
+        "description": [
+            "Installs a plugin onto the server."
+        ]
+    },
+    {
+        "method": "post",
+        "name": "/server/<span class=\"placeholder\">Server ID</span>/remove_plugin",
+        "auth": true,
+        "endpoint": "https://api.minehut.com/server/{server-id}/remove_plugin",
+        "body": "{\"plugin\":\"5a42ba4846246d33fa64c625\"}",
+        "description": [
+            "Uninstalls a plugin from the server."
+        ]
+    },
+    {
+        "method": "post",
+        "name": "/server/<span class=\"placeholder\">Server ID</span>/remove_plugin_data",
+        "auth": true,
+        "endpoint": "https://api.minehut.com/server/{server-id}/remove_plugin_data",
+        "body": "{\"plugin\":\"5a42ba4846246d33fa64c625\"}",
+        "description": [
+            "Resets the plugin configuration file."
+        ]
+    },
 ]
