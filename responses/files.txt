@@ -16,8 +16,8 @@
 		"directory": false,
 		"blocked": false
 	}, 
-  ...
-  {
+  	...
+  	{
 		"name": "whitelist.json",
 		"directory": false,
 		"blocked": false
