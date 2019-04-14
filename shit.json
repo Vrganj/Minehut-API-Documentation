@@ -307,7 +307,7 @@
         "auth": true,
         "endpoint": "https://api.minehut.com/file/{server-id}/list",
         "description": [
-            "Returns all the files in the servers root."
+            "Returns all the files and folders in the servers root."
         ],
         "response": {
             "file": "files.txt"
@@ -319,7 +319,7 @@
         "auth": true,
         "endpoint": "https://api.minehut.com/file/{server-id}/list/{path}",
         "description": [
-            "Returns all the files in the path specified."
+            "Returns all the files and folders in the provided path."
         ],
         "response": {
             "file": "files.txt"
@@ -331,7 +331,7 @@
         "auth": true,
         "endpoint": "https://api.minehut.com/file/{server-id}/read/{file-path}",
         "description": [
-            "Returns all the files in the path specified."
+            "Returns all the contents of a file."
         ],
         "response": {
             "file": "read.txt"
@@ -344,7 +344,16 @@
         "endpoint": "https://api.minehut.com/file/{server-id}/edit/{file-path}",
         "body": "{\"content\":\"This text will overwrite whatever is inside the file\"}"
         "description": [
-            "Edits the file and saves it with the content provided."
+            "Edits a file and saves it with the provided content (~4GB max)."
+        ]
+    },
+    {
+        "method": "post",
+        "name": "/file/<span class=\"placeholder\">Server ID</span>/read/<span class=\"placeholder\">File path</span>",
+        "auth": true,
+        "endpoint": "https://api.minehut.com/file/{server-id}/read/{file-path}",
+        "description": [
+            "Deletes a file."
         ]
     }
 ]
