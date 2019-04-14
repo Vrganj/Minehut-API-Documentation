@@ -1,4 +1,4 @@
 # Minehut-API-Documentation
 A documentation of the Minehut API.
 
-*test*
+Contains a large part of the endpoints used by Minehut.
