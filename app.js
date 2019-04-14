@@ -2,7 +2,6 @@ const BASE_RAW = "https://raw.githubusercontent.com/Vrganj/Minehut-API-Documenta
 let endpoints = [];
 
 window.onload = async (e) => {
-    if (isMobileDevice()) document.getElementById('navbar').style.display = 'none';
 
     const data = await fetch(`${BASE_RAW}/shit.json`).then(res => res.json());
 
@@ -61,6 +60,10 @@ window.onload = async (e) => {
         `;
 
         document.getElementById("content").append(card);
+        if (isMobileDevice()) {
+            document.getElementById('navbar').style.display = 'none';
+            card.style.margin = '5px';
+        }
 
         const response = card.getElementsByClassName('response')[0];
         if (response != null) {
