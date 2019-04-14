@@ -315,9 +315,9 @@
     },
     {
         "method": "post",
-        "name": "/file/<span class=\"placeholder\">Server ID</span>/list/<span class=\"placeholder\">File path</span>",
+        "name": "/file/<span class=\"placeholder\">Server ID</span>/list/<span class=\"placeholder\">Path</span>",
         "auth": true,
-        "endpoint": "https://api.minehut.com/file/{server-id}/list/{file-path}",
+        "endpoint": "https://api.minehut.com/file/{server-id}/list/{path}",
         "description": [
             "Returns all the files in the path specified."
         ],
