@@ -2,6 +2,8 @@ const BASE_RAW = "https://raw.githubusercontent.com/Vrganj/Minehut-API-Documenta
 let endpoints = [];
 
 window.onload = async (e) => {
+    if (isMobileDevice()) document.getElementById('navbar').style.display = 'none';
+
     const data = await fetch(`${BASE_RAW}/shit.json`).then(res => res.json());
 
     data.forEach(async (c) => {
@@ -70,3 +72,7 @@ window.onload = async (e) => {
         }
     });
 }
+
+function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+};
