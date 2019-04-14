@@ -349,9 +349,9 @@
     },
     {
         "method": "post",
-        "name": "/file/<span class=\"placeholder\">Server ID</span>/read/<span class=\"placeholder\">File path</span>",
+        "name": "/file/<span class=\"placeholder\">Server ID</span>/delete/<span class=\"placeholder\">File path</span>",
         "auth": true,
-        "endpoint": "https://api.minehut.com/file/{server-id}/read/{file-path}",
+        "endpoint": "https://api.minehut.com/file/{server-id}/delete/{file-path}",
         "description": [
             "Deletes a file."
         ]
