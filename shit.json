@@ -301,4 +301,28 @@
             "Resets the plugin configuration file."
         ]
     },
+    {
+        "method": "post",
+        "name": "/file/<span class=\"placeholder\">Server ID</span>/list",
+        "auth": true,
+        "endpoint": "https://api.minehut.com/file/{server-id}/list",
+        "description": [
+            "Returns all the files in the servers root."
+        ],
+        "response": {
+            "file": "files.txt"
+        }
+    },
+    {
+        "method": "post",
+        "name": "/file/<span class=\"placeholder\">Server ID</span>/list/<span class=\"placeholder\">File path</span>",
+        "auth": true,
+        "endpoint": "https://api.minehut.com/file/{server-id}/list/{file-path}",
+        "description": [
+            "Returns all the files in the path specified."
+        ],
+        "response": {
+            "file": "files.txt"
+        }
+    }
 ]
