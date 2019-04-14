@@ -1,24 +1,61 @@
-body {
+body,
+html {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
 }
 
-ul {
+#topbar,
+#navbar {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  max-width: 20%;
-  top: 0;
-  background-color: #242D32;
-  height: 100%;
   color: #fff;
-  position: fixed;
   overflow-x: hidden;
+  position: fixed;
+  z-index: 2;
+}
+
+#topbar li {
+  display: inline-block;
+  margin: 0 7.5px 0 7.5px;
+}
+
+#topbar {
+  display: flex;
+  background: #488AFF;
+  vertical-align: middle;
+  align-items: center;
+  height: 10%;
+  width: 100%;
+  top: 0;
+}
+
+#navbar {
+  max-width: 20%;
+  top: 10%;
+  background: #242D32;
+  height: 90%;
   overflow-y: auto;
 }
 
-li:hover {
+#Layer_1 {
+  fill: white;
+  width: 30px;
+  height: 30px;
+}
+
+#content {
+  overflow: auto;
+  position: fixed;
+  height: 90%;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+#navbar li:hover {
   background: rgba(0, 0, 0, 0.1);
 }
 
