@@ -62,7 +62,7 @@ window.onload = async (e) => {
         document.getElementById("content").append(card);
         if (isMobileDevice()) {
             document.getElementById('navbar').style.display = 'none';
-            card.style.margin = '5px';
+            card.getElementsByClassName('card')[0].style.margin = '0';
         }
 
         const response = card.getElementsByClassName('response')[0];

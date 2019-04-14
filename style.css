@@ -85,7 +85,7 @@ code {
   padding-right: 0px;
   padding-bottom: 1px;
   padding-left: 0px;
-  white-space: pre-wrap;
+  overflow-wrap: break-word;
 }
 
 .card-info, .card-description {
