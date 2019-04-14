@@ -22,6 +22,10 @@ li:hover {
   background: rgba(0, 0, 0, 0.1);
 }
 
+#navbar li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 li a {
   display: block;
   color: #c2c2c2;

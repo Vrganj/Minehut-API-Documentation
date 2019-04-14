@@ -60,6 +60,7 @@ window.onload = async (e) => {
         `;
 
         document.getElementById("content").append(card);
+        
         if (isMobileDevice()) {
             document.getElementById('navbar').style.display = 'none';
             card.getElementsByClassName('card')[0].style.margin = '7.5px';
