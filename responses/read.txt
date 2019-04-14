@@ -1,3 +1,3 @@
 {
-	"content": "# This is the commands configuration file for Bukkit.\n# For documentation on how to make use of this file, check out the Bukkit Wiki at\n# http://wiki.bukkit.org/Commands.yml\n# \n# If you need help on this file, feel free to join us on irc or leave a message\n# on the forums asking for advice.\n# \n# IRC: #spigot @ irc.spi.gt\n#    (If this means nothing to you, just go to http://www.spigotmc.org/pages/irc/ )\n# Forums: http://www.spigotmc.org/\n# Bug tracker: http://www.spigotmc.org/go/bugs\n\ncommand-block-overrides: []\nunrestricted-advancements: false\naliases:\n  icanhasbukkit:\n  - version $1-\n"
+	"content": "The contents of the file will be in here"
 }
