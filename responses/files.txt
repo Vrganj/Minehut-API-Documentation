@@ -1,0 +1,37 @@
+{
+	"files": [{
+		"name": "banned-ips.json",
+		"directory": false,
+		"blocked": false
+	}, {
+		"name": "banned-players.json",
+		"directory": false,
+		"blocked": false
+	}, {
+		"name": "bukkit.yml",
+		"directory": false,
+		"blocked": false
+	}, {
+		"name": "commands.yml",
+		"directory": false,
+		"blocked": false
+	}, 
+  	...
+  	{
+		"name": "whitelist.json",
+		"directory": false,
+		"blocked": false
+	}, {
+		"name": "world",
+		"directory": true,
+		"blocked": true
+	}, {
+		"name": "world_nether",
+		"directory": true,
+		"blocked": true
+	}, {
+		"name": "world_the_end",
+		"directory": true,
+		"blocked": true
+	}]
+}

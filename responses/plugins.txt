@@ -1,0 +1,35 @@
+{
+	"plugins": [{
+		"state": "PURCHASED",
+		"_id": "5a42ba4846246d33fa64c625",
+		"name": "Essentials",
+		"credits": 0,
+		"platform": "java",
+		"desc": "Essential commands",
+		"desc_extended": "",
+		"version": "2.15.0.1",
+		"disabled": false,
+		"file_name": "Essentials.jar",
+		"config_file_name": "",
+		"__v": 0,
+		"created": 1536882007186,
+		"last_updated": 1552068718798
+	},
+	...
+	{
+		"state": "PURCHASED",
+		"_id": "5a42bb0246246d33fa64c627",
+		"name": "EssentialsChat",
+		"credits": 0,
+		"platform": "java",
+		"desc": "Format the chat to make it look nicer.",
+		"desc_extended": "Requires Vault",
+		"version": "2.15.0.1",
+		"disabled": false,
+		"file_name": "EssentialsChat.jar",
+		"config_file_name": "",
+		"__v": 0,
+		"created": 1536882039069,
+		"last_updated": 1536882039069
+	}]
+}
