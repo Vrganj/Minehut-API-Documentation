@@ -78,7 +78,6 @@ code {
 }
 
 .card-info code {
-  display: block;
   width: 580px;
   padding: 3px 0 1px 0;
   padding-top: 3px;
