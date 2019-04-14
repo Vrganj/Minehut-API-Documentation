@@ -14,7 +14,9 @@
 		"__v": 0,
 		"created": 1536882007186,
 		"last_updated": 1552068718798
-	}, {
+	},
+	...
+	{
 		"state": "PURCHASED",
 		"_id": "5a42bb0246246d33fa64c627",
 		"name": "EssentialsChat",
