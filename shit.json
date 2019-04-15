@@ -344,7 +344,8 @@
         "endpoint": "https://api.minehut.com/file/{server-id}/edit/{file-path}",
         "body": "{\"content\":\"This text will overwrite whatever is inside the file\"}",
         "description": [
-            "Edits a file and saves it with the provided content (~4GB max)."
+            "Edits a file and saves it with the provided content (~4GB max).",
+            "This also creates a file if one does not exist (provide a blank content for a blank file)"
         ]
     },
     {
@@ -354,6 +355,16 @@
         "endpoint": "https://api.minehut.com/file/{server-id}/delete/{file-path}",
         "description": [
             "Deletes a file."
+        ]
+    },
+    {
+        "method": "post",
+        "name": "/file/<span class=\"placeholder\">Server ID</span>/folder/create",
+        "auth": true,
+        "endpoint": "https://api.minehut.com/file/{server-id}/foler/create",
+        "body": "{\"name\":\"MyFolder\",\"directory\":\"world\"}",
+        "description": [
+            "Creates a new folder in the directory."
         ]
     }
 ]
