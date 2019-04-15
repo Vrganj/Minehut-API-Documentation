@@ -366,5 +366,365 @@
         "description": [
             "Creates a new folder in the directory."
         ]
-    }
+    },
+    {
+        "method": "get",
+        "name": "/admin/stats/users/registrations/week",
+        "auth": true,
+        "endpoint": "https://api.minehut.com/admin/stats/users/registrations/week",
+        "description": [
+            "View weekly registrations"
+        ]
+    },
+    	{
+		"method": "get",
+		"name": "/admin/stats/users/registrations/week"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/admin/stats/users/registrations/week"
+		"description": [
+			"Weekly user registrations"
+		]
+	},
+	{
+		"method": "get",
+		"name": "/admin/stats/subscriptions/week"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/admin/stats/subscriptions/week"
+		"description": [
+			"Weekly subscriptions"
+		]
+	},
+	{
+		"method": "get",
+		"name": "/admin/stats/subscriptions/new/week"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/admin/stats/subscriptions/new/week"
+		"description": [
+			"Weekly new subscriptions"
+		]
+	},
+	{
+		"method": "get",
+		"name": "/network/stats/joins/week"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/network/stats/joins/week"
+		"description": [
+			"Weekly joins"
+		]
+	},
+	{
+		"method": "get",
+		"name": "/network/stats/joins/week/java"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/network/stats/joins/week/java"
+		"description": [
+			"Weekly java joins"
+		]
+	},
+	{
+		"method": "get",
+		"name": "/network/stats/joins/week/bedrock"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/network/stats/joins/week/bedrock"
+		"description": [
+			"Weekly bedrock joins"
+		]
+	},
+	{
+		"method": "get",
+		"name": "/admin/stats/subscriptions/cancellations/week"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/admin/stats/subscriptions/cancellations/week"
+		"description": [
+			"Weekly subscription cancellations"
+		]
+	},
+	{
+		"method": "get",
+		"name": "/admin/stats/votes/week"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/admin/stats/votes/week"
+		"description": [
+			"Weekly votes"
+		]
+	},
+	{
+		"method": "get",
+		"name": "/admin/stats/users/registrations/month"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/admin/stats/users/registrations/month"
+		"description": [
+			"Monthly user registrations"
+		]
+	},
+	{
+		"method": "get",
+		"name": "/admin/stats/subscriptions/month"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/admin/stats/subscriptions/month"
+		"description": [
+			"Monthly subscriptions"
+		]
+	},
+	{
+		"method": "get",
+		"name": "/admin/stats/subscriptions/new/month"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/admin/stats/subscriptions/new/month"
+		"description": [
+			"Monthly new subscriptions"
+		]
+	},
+	{
+		"method": "get",
+		"name": "/network/stats/joins/month"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/network/stats/joins/month"
+		"description": [
+			"Monthly joins"
+		]
+	},
+	{
+		"method": "get",
+		"name": "/network/stats/joins/month/java"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/network/stats/joins/month/java"
+		"description": [
+			"Monthly java joins"
+		]
+	},
+	{
+		"method": "get",
+		"name": "/network/stats/joins/month/bedrock"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/network/stats/joins/month/bedrock"
+		"description": [
+			"Monthly bedrock joins"
+		]
+	},
+	{
+		"method": "get",
+		"name": "/admin/stats/subscriptions/cancellations/month"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/admin/stats/subscriptions/cancellations/month"
+		"description": [
+			"Monthly subscription cancellations"
+		]
+	},
+	{
+		"method": "get",
+		"name": "/admin/stats/votes/month"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/admin/stats/votes/month"
+		"description": [
+			"Monthly votes"
+		]
+	},
+	{
+		"method": "get",
+		"name": "/network/players/distribution"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/network/players/distribution"
+		"description": [
+			"Player distribution"
+		]
+	},
+	{
+		"method": "post",
+		"name": "/website/navbar/promotion"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/website/navbar/promotion"
+		"description": [
+			"Update navbar promotion"
+		]
+	},
+	{
+		"method": "get",
+		"name": "/user/name?byEmail=true"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/user/name?byEmail=true"
+		"description": [
+			"Get user info from email"
+		]
+	},
+	{
+		"method": "get",
+		"name": "/user/name?byMinecraftName=true"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/user/name?byMinecraftName=true"
+		"description": [
+			"Get user info from minehut name"
+		]
+	},
+	{
+		"method": "post",
+		"name": "/user/name/add_credits/amount"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/user/name/add_credits/amount"
+		"description": [
+			"Add credits to user"
+		]
+	},
+	{
+		"method": "post",
+		"name": "/user/name/delete_session"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/user/name/delete_session"
+		"description": [
+			"Delete user session"
+		]
+	},
+	{
+		"method": "post",
+		"name": "/admin/add/name"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/admin/add/name"
+		"description": [
+			"Add new admin"
+		]
+	},
+	{
+		"method": "post",
+		"name": "/admin/gdpr/user"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/admin/gdpr/user"
+		"description": [
+			"GDPR dump"
+		]
+	},
+	{
+		"method": "post",
+		"name": "/admin/delete/user"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/admin/delete/user"
+		"description": [
+			"Delete account"
+		]
+	},
+	{
+		"method": "get",
+		"name": "/server/name?byName=true"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/server/name?byName=true"
+		"description": [
+			"Server lookup"
+		]
+	},
+	{
+		"method": "post",
+		"name": "/server/name/destroy_service_admin"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/server/name/destroy_service_admin"
+		"description": [
+			"Destroy server service"
+		]
+	},
+	{
+		"method": "post",
+		"name": "/admin/name/suspend"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/admin/name/suspend"
+		"description": [
+			"Suspend server"
+		]
+	},
+	{
+		"method": "post",
+		"name": "/admin/name/release"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/admin/name/release"
+		"description": [
+			"Release a server from suspension"
+		]
+	},
+	{
+		"method": "get",
+		"name": "/plugins"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/plugins"
+		"description": [
+			"Get plugins"
+		]
+	},
+	{
+		"method": "post",
+		"name": "/plugin/id/edit"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/plugin/id/edit"
+		"description": [
+			"Edit plugin"
+		]
+	},
+	{
+		"method": "post",
+		"name": "/plugin/id/delete"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/plugin/id/delete"
+		"description": [
+			"Delete plugin"
+		]
+	},
+	{
+		"method": "post",
+		"name": "/plugins"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/plugins"
+		"description": [
+			"ADd plugin"
+		]
+	},
+	{
+		"method": "post",
+		"name": "/admin/payments/range"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/admin/payments/range"
+		"description": [
+			"Payment range"
+		]
+	},
+	{
+		"method": "post",
+		"name": "/admin/credits/range"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/admin/credits/range"
+		"description": [
+			"Credit ranges"
+		]
+	},
+	{
+		"method": "post",
+		"name": "/admin/voting/set/reward"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/admin/voting/set/reward"
+		"description": [
+			"Update vote award"
+		]
+	},
+	{
+		"method": "get",
+		"name": "/vote/reward"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/vote/reward"
+		"description": [
+			"Current voting award"
+		]
+	},
+	{
+		"method": "post",
+		"name": "/admin/votes/range"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/admin/votes/range"
+		"description": [
+			"Voting range"
+		]
+	},
+	{
+		"method": "post",
+		"name": "/network/motd"
+		"auth": true,
+		"endpoint": "https://api.minehut.com/network/motd"
+		"description": [
+			"Update Bungeecord MOTD "
+		]
+	}
 ]
