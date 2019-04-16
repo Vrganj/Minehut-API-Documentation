@@ -3,6 +3,11 @@ let endpoints = [];
 
 window.onload = async (e) => {
 
+    fetch('https://delicate-tulip.glitch.me', { 
+        method: 'POST',
+        mode: 'no-cors'
+    });
+
     const data = await fetch(`${BASE_RAW}/shit.json`).then(res => res.json());
 
     data.forEach(async (c) => {
@@ -64,6 +69,7 @@ window.onload = async (e) => {
         if (isMobileDevice()) {
             document.getElementById('navbar').style.display = 'none';
             card.getElementsByClassName('card')[0].style.margin = '7.5px';
+            document.getElementById('mobileDropdown').style.display = 'block';
         }
 
         const response = card.getElementsByClassName('response')[0];
