@@ -361,7 +361,7 @@
         "method": "post",
         "name": "/file/<span class=\"placeholder\">Server ID</span>/folder/create",
         "auth": true,
-        "endpoint": "https://api.minehut.com/file/{server-id}/foler/create",
+        "endpoint": "https://api.minehut.com/file/{server-id}/folder/create",
         "body": "{\"name\":\"MyFolder\",\"directory\":\"world\"}",
         "description": [
             "Creates a new folder in the directory."
@@ -661,7 +661,7 @@
         "auth": true,
         "endpoint": "https://api.minehut.com/plugins",
         "description": [
-            "ADd plugin"
+            "Add plugin"
         ]
     },
     {
