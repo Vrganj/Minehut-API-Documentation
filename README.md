@@ -1,2 +1,2 @@
 # Minehut-API-Documentation
-Changed the repository...
+Being remade.

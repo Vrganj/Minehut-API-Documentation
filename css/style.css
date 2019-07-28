@@ -1,0 +1,28 @@
+.bg-darky {
+    background: #24292e;
+}
+
+svg > .logo {
+    fill: white;
+}
+
+nav * {
+    font-size: 1rem !important;
+    box-shadow: none !important;
+}
+
+#search {
+    background: #3f4448;
+    height: 28px;
+    border: 0;
+    color: #eee;
+    font-size: 13px !important;
+    min-width: 20em;
+    max-width: 90%;
+}
+
+input[type="text"],
+textarea {
+    outline: none;
+    box-shadow: none !important;
+}
