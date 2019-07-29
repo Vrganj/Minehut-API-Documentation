@@ -13,7 +13,7 @@ const documentation = [
     },
     {
         method: 'get',
-        name: '/server/<span class="placeholder">Server ID</span>',
+        name: '/server/<code class="dark">Server ID</code>',
         auth: false,
         endpoint: 'https://api.minehut.com/server/{server-id}',
         description: [
@@ -25,8 +25,7 @@ const documentation = [
     },
     {
         method: 'get',
-        name:
-            '/server/<span class="placeholder">Server Name</span>?byName=true',
+        name: '/server/<code class="dark">Server Name</code>?byName=true',
         auth: false,
         endpoint: 'https://api.minehut.com/server/{server-name}?byName=true',
         description: [
@@ -91,7 +90,7 @@ const documentation = [
     },
     {
         method: 'get',
-        name: '/user/<span class="placeholder">User ID</span>',
+        name: '/user/<code class="dark">User ID</code>',
         auth: true,
         endpoint: 'https://api.minehut.com/user/{user-id}',
         description: [
@@ -113,7 +112,7 @@ const documentation = [
     },
     {
         method: 'get',
-        name: '/servers/<span class="placeholder">Server ID</span>/server_data',
+        name: '/servers/<code class="dark">Server ID</code>/server_data',
         auth: true,
         endpoint: 'https://api.minehut.com/servers/{server-id}/server_data',
         description: [
@@ -122,7 +121,7 @@ const documentation = [
     },
     {
         method: 'get',
-        name: '/server/<span class="placeholder">Server ID</span>/status',
+        name: '/server/<code class="dark">Server ID</code>/status',
         auth: true,
         endpoint: 'https://api.minehut.com/server/{server-id}/status',
         description: [
@@ -131,8 +130,7 @@ const documentation = [
     },
     {
         method: 'post',
-        name:
-            '/server/<span class="placeholder">Server ID</span>/start_service',
+        name: '/server/<code class="dark">Server ID</code>/start_service',
         auth: true,
         endpoint: 'https://api.minehut.com/server/{server-id}/start_service',
         description: [
@@ -141,7 +139,7 @@ const documentation = [
     },
     {
         method: 'post',
-        name: '/server/<span class="placeholder">Server ID</span>/start',
+        name: '/server/<code class="dark">Server ID</code>/start',
         auth: true,
         endpoint: 'https://api.minehut.com/server/{server-id}/start',
         description: [
@@ -150,7 +148,7 @@ const documentation = [
     },
     {
         method: 'post',
-        name: '/server/<span class="placeholder">Server ID</span>/shutdown',
+        name: '/server/<code class="dark">Server ID</code>/shutdown',
         auth: true,
         endpoint: 'https://api.minehut.com/server/{server-id}/shutdown',
         description: [
@@ -159,8 +157,7 @@ const documentation = [
     },
     {
         method: 'post',
-        name:
-            '/server/<span class="placeholder">Server ID</span>/destroy_service',
+        name: '/server/<code class="dark">Server ID</code>/destroy_service',
         auth: true,
         endpoint: 'https://api.minehut.com/server/{server-id}/destroy_service',
         description: [
@@ -169,7 +166,7 @@ const documentation = [
     },
     {
         method: 'post',
-        name: '/server/<span class="placeholder">Server ID</span>/repair_files',
+        name: '/server/<code class="dark">Server ID</code>/repair_files',
         auth: true,
         endpoint: 'https://api.minehut.com/server/{server-id}/repair_files',
         description: [
@@ -178,7 +175,7 @@ const documentation = [
     },
     {
         method: 'post',
-        name: '/server/<span class="placeholder">Server ID</span>/reset_all',
+        name: '/server/<code class="dark">Server ID</code>/reset_all',
         auth: true,
         endpoint: 'https://api.minehut.com/server/{server-id}/reset_all',
         description: [
@@ -187,7 +184,7 @@ const documentation = [
     },
     {
         method: 'post',
-        name: '/server/<span class="placeholder">Server ID</span>/send_command',
+        name: '/server/<code class="dark">Server ID</code>/send_command',
         auth: true,
         endpoint: 'https://api.minehut.com/server/{server-id}/send_command',
         body: '{"command":"/say Hello World!"}',
@@ -197,7 +194,7 @@ const documentation = [
     },
     {
         method: 'post',
-        name: '/server/<span class="placeholder">Server ID</span>/change_name',
+        name: '/server/<code class="dark">Server ID</code>/change_name',
         auth: true,
         endpoint: 'https://api.minehut.com/server/{server-id}/change_name',
         body: '{"name":"MyServer2.0"}',
@@ -207,7 +204,7 @@ const documentation = [
     },
     {
         method: 'post',
-        name: '/server/<span class="placeholder">Server ID</span>/change_motd',
+        name: '/server/<code class="dark">Server ID</code>/change_motd',
         auth: true,
         endpoint: 'https://api.minehut.com/server/{server-id}/change_motd',
         body: '{"command":"&6Ooo, &athis is nice!"}',
@@ -217,7 +214,7 @@ const documentation = [
     },
     {
         method: 'post',
-        name: '/server/<span class="placeholder">Server ID</span>/visibility',
+        name: '/server/<code class="dark">Server ID</code>/visibility',
         auth: true,
         endpoint: 'https://api.minehut.com/server/{server-id}/visibility',
         body: '{"visibility":"true/false"}',
@@ -227,7 +224,7 @@ const documentation = [
     },
     {
         method: 'post',
-        name: '/server/<span class="placeholder">Server ID</span>/save',
+        name: '/server/<code class="dark">Server ID</code>/save',
         auth: true,
         endpoint: 'https://api.minehut.com/server/{server-id}/save',
         description: [
@@ -236,7 +233,7 @@ const documentation = [
     },
     {
         method: 'post',
-        name: '/server/<span class="placeholder">Server ID</span>/reset_world',
+        name: '/server/<code class="dark">Server ID</code>/reset_world',
         auth: true,
         endpoint: 'https://api.minehut.com/server/{server-id}/reset_world',
         description: [
@@ -246,7 +243,7 @@ const documentation = [
     {
         method: 'post',
         name:
-            '/server/<span class="placeholder">Server ID</span>/edit_server_properties',
+            '/server/<code class="dark">Server ID</code>/edit_server_properties',
         auth: true,
         endpoint:
             'https://api.minehut.com/server/{server-id}/edit_server_properties',
@@ -259,7 +256,7 @@ const documentation = [
     },
     {
         method: 'post',
-        name: '/file/world/upload/<span class="placeholder">Server ID</span>',
+        name: '/file/world/upload/<code class="dark">Server ID</code>',
         auth: true,
         endpoint: 'https://api.minehut.com/file/world/upload/{server-id}',
         body: 'File (binary)',
@@ -269,7 +266,7 @@ const documentation = [
     },
     {
         method: 'post',
-        name: '/server/<span class="placeholder">Server ID</span>/plugins',
+        name: '/server/<code class="dark">Server ID</code>/plugins',
         auth: true,
         endpoint: 'https://api.minehut.com/server/{server-id}/plugins',
         description: [
@@ -281,8 +278,7 @@ const documentation = [
     },
     {
         method: 'post',
-        name:
-            '/server/<span class="placeholder">Server ID</span>/install_plugin',
+        name: '/server/<code class="dark">Server ID</code>/install_plugin',
         auth: true,
         endpoint: 'https://api.minehut.com/server/{server-id}/install_plugin',
         body: '{"plugin":"5a42ba4846246d33fa64c625"}',
@@ -292,8 +288,7 @@ const documentation = [
     },
     {
         method: 'post',
-        name:
-            '/server/<span class="placeholder">Server ID</span>/remove_plugin',
+        name: '/server/<code class="dark">Server ID</code>/remove_plugin',
         auth: true,
         endpoint: 'https://api.minehut.com/server/{server-id}/remove_plugin',
         body: '{"plugin":"5a42ba4846246d33fa64c625"}',
@@ -303,8 +298,7 @@ const documentation = [
     },
     {
         method: 'post',
-        name:
-            '/server/<span class="placeholder">Server ID</span>/remove_plugin_data',
+        name: '/server/<code class="dark">Server ID</code>/remove_plugin_data',
         auth: true,
         endpoint:
             'https://api.minehut.com/server/{server-id}/remove_plugin_data',
@@ -315,7 +309,7 @@ const documentation = [
     },
     {
         method: 'post',
-        name: '/file/<span class="placeholder">Server ID</span>/list',
+        name: '/file/<code class="dark">Server ID</code>/list',
         auth: true,
         endpoint: 'https://api.minehut.com/file/{server-id}/list',
         description: [
@@ -328,7 +322,7 @@ const documentation = [
     {
         method: 'post',
         name:
-            '/file/<span class="placeholder">Server ID</span>/list/<span class="placeholder">Path</span>',
+            '/file/<code class="dark">Server ID</span>/list/<span class="placeholder">Path</code>',
         auth: true,
         endpoint: 'https://api.minehut.com/file/{server-id}/list/{path}',
         description: [
@@ -341,7 +335,7 @@ const documentation = [
     {
         method: 'post',
         name:
-            '/file/<span class="placeholder">Server ID</span>/read/<span class="placeholder">File path</span>',
+            '/file/<code class="dark">Server ID</span>/read/<span class="placeholder">File path</code>',
         auth: true,
         endpoint: 'https://api.minehut.com/file/{server-id}/read/{file-path}',
         description: [
@@ -354,7 +348,7 @@ const documentation = [
     {
         method: 'post',
         name:
-            '/file/<span class="placeholder">Server ID</span>/edit/<span class="placeholder">File path</span>',
+            '/file/<code class="dark">Server ID</span>/edit/<span class="placeholder">File path</code>',
         auth: true,
         endpoint: 'https://api.minehut.com/file/{server-id}/edit/{file-path}',
         body:
@@ -367,7 +361,7 @@ const documentation = [
     {
         method: 'post',
         name:
-            '/file/<span class="placeholder">Server ID</span>/delete/<span class="placeholder">File path</span>',
+            '/file/<code class="dark">Server ID</span>/delete/<span class="placeholder">File path</code>',
         auth: true,
         endpoint: 'https://api.minehut.com/file/{server-id}/delete/{file-path}',
         description: [
@@ -376,7 +370,7 @@ const documentation = [
     },
     {
         method: 'post',
-        name: '/file/<span class="placeholder">Server ID</span>/folder/create',
+        name: '/file/<code class="dark">Server ID</code>/folder/create',
         auth: true,
         endpoint: 'https://api.minehut.com/file/{server-id}/folder/create',
         body: '{"name":"MyFolder","directory":"world"}',
