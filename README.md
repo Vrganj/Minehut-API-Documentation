@@ -1,2 +1,2 @@
 # Minehut-API-Documentation
-Being remade.
+The Minehut API documentation.
